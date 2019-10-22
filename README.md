@@ -10,7 +10,7 @@ few other important commands:
 2) phalcon model <model name>
 
 
-For DB connection, we need to edit: app/config/config.phalconFirstProject
+For DB connection, we need to edit: app/config/config.php
 
 For Routing, we can use app/config/router.php
 services.php is a container there we can found all kind of configrations.
