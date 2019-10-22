@@ -30,14 +30,14 @@ if ($users->count() > 0) {
             </tr>
         <?php }*/ ?>
 
-        {% for user in users %}
+        <?php foreach ($users as $user) { ?>
           <tr>
-              <td>{{ user.id }}</td>
-              <td>{{ user.name }}</td>
-              <td>{{ user.emailid }}</td>
-              <td>{{ user.contactNumber }}</td>
+              <td><?= $user->id ?></td>
+              <td><?= $user->name ?></td>
+              <td><?= $user->emailid ?></td>
+              <td><?= $user->contactNumber ?></td>
           </tr>
-          {% endfor %}
+          <?php } ?>
         </tbody>
     </table>
     <?php
